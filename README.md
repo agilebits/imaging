@@ -1,6 +1,6 @@
 # Imaging
 
-[![GoDoc](https://godoc.org/github.com/disintegration/imaging?status.svg)](https://godoc.org/github.com/disintegration/imaging)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/disintegration/imaging)](https://pkg.go.dev/github.com/disintegration/imaging)
 [![Build Status](https://travis-ci.org/disintegration/imaging.svg?branch=master)](https://travis-ci.org/disintegration/imaging)
 [![Coverage Status](https://coveralls.io/repos/github/disintegration/imaging/badge.svg?branch=master&service=github)](https://coveralls.io/github/disintegration/imaging?branch=master)
 [![Go Report Card](https://goreportcard.com/badge/github.com/disintegration/imaging)](https://goreportcard.com/report/github.com/disintegration/imaging)
@@ -16,7 +16,7 @@ as an input, and return a new image of `*image.NRGBA` type (32bit RGBA colors, n
 
 ## Documentation
 
-http://godoc.org/github.com/disintegration/imaging
+https://pkg.go.dev/github.com/disintegration/imaging
 
 ## Usage examples
 
@@ -134,7 +134,7 @@ Original image                     | Saturation = 30                            
 ### Incorrect image orientation after processing (e.g. an image appears rotated after resizing)
 
 Most probably, the given image contains the EXIF orientation tag.
-The stadard `image/*` packages do not support loading and saving
+The standard `image/*` packages do not support loading and saving
 this kind of information. To fix the issue, try opening images with
 the `AutoOrientation` decode option. If this option is set to `true`,
 the image orientation is changed after decoding, according to the
